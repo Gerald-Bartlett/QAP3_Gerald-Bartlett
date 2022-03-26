@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include('./partials/header.ejs') %>  
+  <body>   
+<div><a href="/home">Search For ID</a></div>
+<div><h2>Choose your customer_id </h2></div>
+    <div class="dropdown"> 
+      <button class = "dropbtn">Customer ID's</button>
+      <div class ="dropdown-content">
+      <% if (customers.length > 0) { %> <% customers.forEach(customer => { %>
+      <p class="customer_id">
+        <a href="<%= customer.cus_id %>"><br><%= customer.cus_id %> <br> </a>
+      </p>
+      <% }) %>
+    <% } %>
+   
+    </div>
+    </div>
+   <div><%- include('./partials/footer.ejs') %> </div>
+  </body>
+  
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+  <%- include('./partials/header.ejs') %>
+  <head>
+    <title>The Dvd Rentals</title>
+  </head>
+  <body id="root">    
+    
+    <%- include('./partials/nav.ejs') %>
+    <h2>Dvd Rentals for all your entertainment needs !!!</h2> 
+   
+  <form action="/customer" method="get">
+    <fieldset>
+      <h3>View your account</h3>
+      <label>Customer ID</label>
+      <input type="text" id="customer_id" name="id" required>
+      <label for="password">Password: </label>
+      <input type="text" id="password" name="password" required/><br /> <br />   
+      <button type ="reset">Reset</button>&nbsp &nbsp
+      <button type ="submit" value="Submit as Admin">Submit</button>
+      
+      <br><br><br>
+    </fieldset>
+   </form >
+
+   <%- include('./partials/footer.ejs') %>
+   </html> -->
+
+</body>

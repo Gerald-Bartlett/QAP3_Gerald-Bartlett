@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include('./partials/header.ejs') %>
+  <a href="/home">Search ID</a>
+  <body>
+    <div class="lost content">
+      <h2>Connect at any time!</h2>
+      <h5>Customer rental information</h5>
+
+      <p class="headlines"> Store ID &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cus ID / Name &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp Film Title 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp Rental Date </p>
+      <% if (customer) { %> <% customer.forEach(customer => { %>
+        <p class="customer">         
+          <br><p class="identify">&nbsp </p>&nbsp &nbsp &nbsp <%= customer.store_id %>&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp   &nbsp &nbsp</a><%= customer.cus_id %></a>&nbsp  &nbsp 
+          <%= customer.full_name %>&nbsp  &nbsp &nbsp  <%= customer.title %>&nbsp   &nbsp &nbsp  <%= customer.rental_date %> <%= customer.notes%>
+        </p>
+        <% }) %>
+     <% } %>
+    </div>
+  </body>
+  <%- include('./partials/footer.ejs') %>
+</html>

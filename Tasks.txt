@@ -1,0 +1,31 @@
+Complete the following tasks:
+
+1.Choose one of the user stories from the list below and develop a full-stack solution  ---------
+
+ a) As a customer of dvdrental I would like to have a web page so I can view the films I have rented in the last 12 months.
+ b) As a store manager at dvdrental I would like to have a web page so I can view the films that have not been returned and the customer who rented the film.
+ c) As the owner of dvdrental I would like to have a web page so I can view the top ten rental films by rental dollars earned for a particular store.
+
+2. Identify the dvdrental database tables required to fullfil the data requirements of your chosen story.----------
+
+3. Create a SQL SELECT statement with the required table JOINS to bring all the required data fields together in one SELECT statement.-------
+
+4. Create a view using the working SQL statement. Test your view with a SELECT * FROM [view_name]  --------
+
+5. Create a QAP3 project folder to disk for storing all the related project files. Be sure to create folders to organize all your files into well-organized modular code.----------
+
+6. Save all SQL queries to disk file(s) into a folder dedicated to SQL.-----------
+
+7. Using NPM packages to build a simple RESTful API and web application in Node.js using the EJS view engine,
+   the Express middleware, and the PostgreSQL pg packages.
+   Note: This REST API needs only to GET /SELECT data from your database. Required packages include pg, express, and ejs.-----------
+
+8. Create all node.js and ejs files like the example code created during the lectures.
+   One file should implement the routes for the API, another the data access layer (DAL)
+   accessing the database view you have created, and other ejs files providing the user interface.---------
+
+9. Execute your Node.js application and test the application via a localhost http request.
+   Iterate your development until your website service successfully displays the database view query results to the web page.--------
+   
+10.	Be sure to save files to the respective QAP3 project folders.---------
+
